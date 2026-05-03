@@ -1,0 +1,3 @@
+import { LayoutDashboard, Wallet, ShoppingCart, Utensils, Receipt, Target } from 'lucide-react';
+const items = [ ['dashboard','Dashboard',LayoutDashboard], ['finanzas','Finanzas',Wallet], ['deudas','Deudas',Receipt], ['compras','Compras',ShoppingCart], ['comidas','Comidas',Utensils], ['personal','Control personal',Target] ];
+export default function Sidebar({ page, setPage }) { return <aside className='sidebar'><div className='brand'><div className='brand-mark'>B</div><div><h1>Personal Finanzas</h1><p>Sistema operativo personal</p></div></div><nav className='nav'>{items.map(([id,label,Icon]) => <button key={id} onClick={() => setPage(id)} className={page===id?'active':''}><Icon size={18}/>{label}</button>)}</nav></aside> }

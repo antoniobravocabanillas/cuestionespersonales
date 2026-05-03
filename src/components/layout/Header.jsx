@@ -1,0 +1,1 @@
+export default function Header({ eyebrow='Control', title, subtitle }) { return <header className='topbar'><div><div className='eyebrow'>{eyebrow}</div><h2 className='title'>{title}</h2><p className='subtitle'>{subtitle}</p></div><span className='badge'>MVP profesional</span></header> }
